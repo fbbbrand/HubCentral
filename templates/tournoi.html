@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" type="image/png" href="/images/logo_rond.png"/>
+
+
+    <link rel="stylesheet" href="../styles/styleTournoi.css" />
+    <title>Tournoi 25 places</title>
+</head>
+
+<body>
+    <section class="main-content flux">
+        <div class="texte">
+            <h1>
+                Tournoi <br />
+                xDreaMerTV
+            </h1>
+        </div>
+        <div class="top25">
+            <div class="ligne-header ligne">
+                <div class="colonne-headerPseudo">Pseudo</div>
+                <div class="colonne-headerSlot">Slot</div>
+                <div class="colonne-headerGain">Gain</div>
+                <div class="colonne-headerMutli">Multiplicateur</div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="1">
+                    <input type="text" id="participant1" placeholder="Entrez le pseudo 1" />
+                </div>
+                <div class="colonneSlot colonne" data-line="1">
+                    <input type="text" placeholder="Entrez la slot 1" />
+                </div>
+                <div class="colonneGain colonne" data-line="1">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="1"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="2">
+                    <input type="text" id="participant2" placeholder="Entrez le pseudo 2" />
+                </div>
+                <div class="colonneSlot colonne" data-line="2">
+                    <input type="text" placeholder="Entrez la slot 2" />
+                </div>
+                <div class="colonneGain colonne" data-line="2">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="2"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="3">
+                    <input type="text" id="participant3" placeholder="Entrez le pseudo 3" />
+                </div>
+                <div class="colonneSlot colonne" data-line="3">
+                    <input type="text" placeholder="Entrez la slot 3" />
+                </div>
+                <div class="colonneGain colonne" data-line="3">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="3"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="4">
+                    <input type="text" id="participant4" placeholder="Entrez le pseudo 4" />
+                </div>
+                <div class="colonneSlot colonne" data-line="4">
+                    <input type="text" placeholder="Entrez la slot 4" />
+                </div>
+                <div class="colonneGain colonne" data-line="4">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="4"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="5">
+                    <input type="text" id="participant5" placeholder="Entrez le pseudo 5" />
+                </div>
+                <div class="colonneSlot colonne" data-line="5">
+                    <input type="text" placeholder="Entrez la slot 5" />
+                </div>
+                <div class="colonneGain colonne" data-line="5">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="5"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="6">
+                    <input type="text" id="participant6" placeholder="Entrez le pseudo 6" />
+                </div>
+                <div class="colonneSlot colonne" data-line="6">
+                    <input type="text" placeholder="Entrez la slot 6" />
+                </div>
+                <div class="colonneGain colonne" data-line="6">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="6"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="7">
+                    <input type="text" id="participant7" placeholder="Entrez le pseudo 7" />
+                </div>
+                <div class="colonneSlot colonne" data-line="7">
+                    <input type="text" placeholder="Entrez la slot 7" />
+                </div>
+                <div class="colonneGain colonne" data-line="7">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="7"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="8">
+                    <input type="text" id="participant8" placeholder="Entrez le pseudo 8" />
+                </div>
+                <div class="colonneSlot colonne" data-line="8">
+                    <input type="text" placeholder="Entrez la slot 8" />
+                </div>
+                <div class="colonneGain colonne" data-line="8">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="8"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="9">
+                    <input type="text" id="participant9" placeholder="Entrez le pseudo 9" />
+                </div>
+                <div class="colonneSlot colonne" data-line="9">
+                    <input type="text" placeholder="Entrez la slot 9" />
+                </div>
+                <div class="colonneGain colonne" data-line="9">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="9"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="10">
+                    <input type="text" id="participant10" placeholder="Entrez le pseudo 10" />
+                </div>
+                <div class="colonneSlot colonne" data-line="10">
+                    <input type="text" placeholder="Entrez la slot 10" />
+                </div>
+                <div class="colonneGain colonne" data-line="10">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="10"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="11">
+                    <input type="text" id="participant11" placeholder="Entrez le pseudo 11" />
+                </div>
+                <div class="colonneSlot colonne" data-line="11">
+                    <input type="text" placeholder="Entrez la slot 11" />
+                </div>
+                <div class="colonneGain colonne" data-line="11">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="11"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="12">
+                    <input type="text" id="participant12" placeholder="Entrez le pseudo 12" />
+                </div>
+                <div class="colonneSlot colonne" data-line="12">
+                    <input type="text" placeholder="Entrez la slot 12" />
+                </div>
+                <div class="colonneGain colonne" data-line="12">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="12"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="13">
+                    <input type="text" id="participant13" placeholder="Entrez le pseudo 13" />
+                </div>
+                <div class="colonneSlot colonne" data-line="13">
+                    <input type="text" placeholder="Entrez la slot 13" />
+                </div>
+                <div class="colonneGain colonne" data-line="13">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="13"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="14">
+                    <input type="text" id="participant14" placeholder="Entrez le pseudo 14" />
+                </div>
+                <div class="colonneSlot colonne" data-line="14">
+                    <input type="text" placeholder="Entrez la slot 14" />
+                </div>
+                <div class="colonneGain colonne" data-line="14">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="14"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="15">
+                    <input type="text" id="participant15" placeholder="Entrez le pseudo 15" />
+                </div>
+                <div class="colonneSlot colonne" data-line="15">
+                    <input type="text" placeholder="Entrez la slot 15" />
+                </div>
+                <div class="colonneGain colonne" data-line="15">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="15"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="16">
+                    <input type="text" id="participant16" placeholder="Entrez le pseudo 16" />
+                </div>
+                <div class="colonneSlot colonne" data-line="16">
+                    <input type="text" placeholder="Entrez la slot 16" />
+                </div>
+                <div class="colonneGain colonne" data-line="16">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="16"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="17">
+                    <input type="text" id="participant17" placeholder="Entrez le pseudo 17" />
+                </div>
+                <div class="colonneSlot colonne" data-line="17">
+                    <input type="text" placeholder="Entrez la slot 17" />
+                </div>
+                <div class="colonneGain colonne" data-line="17">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="17"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="18">
+                    <input type="text" id="participant18" placeholder="Entrez le pseudo 18" />
+                </div>
+                <div class="colonneSlot colonne" data-line="18">
+                    <input type="text" placeholder="Entrez la slot 18" />
+                </div>
+                <div class="colonneGain colonne" data-line="18">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="18"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="19">
+                    <input type="text" id="participant19" placeholder="Entrez le pseudo 19" />
+                </div>
+                <div class="colonneSlot colonne" data-line="19">
+                    <input type="text" placeholder="Entrez la slot 19" />
+                </div>
+                <div class="colonneGain colonne" data-line="19">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="19"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="20">
+                    <input type="text" id="participant20" placeholder="Entrez le pseudo 20" />
+                </div>
+                <div class="colonneSlot colonne" data-line="20">
+                    <input type="text" placeholder="Entrez la slot 20" />
+                </div>
+                <div class="colonneGain colonne" data-line="20">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="20"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="21">
+                    <input type="text" id="participant21" placeholder="Entrez le pseudo 21" />
+                </div>
+                <div class="colonneSlot colonne" data-line="21">
+                    <input type="text" placeholder="Entrez la slot 21" />
+                </div>
+                <div class="colonneGain colonne" data-line="21">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="21"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="22">
+                    <input type="text" id="participant22" placeholder="Entrez le pseudo 22" />
+                </div>
+                <div class="colonneSlot colonne" data-line="22">
+                    <input type="text" placeholder="Entrez la slot 22" />
+                </div>
+                <div class="colonneGain colonne" data-line="22">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="22"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="23">
+                    <input type="text" id="participant23" placeholder="Entrez le pseudo 23" />
+                </div>
+                <div class="colonneSlot colonne" data-line="23">
+                    <input type="text" placeholder="Entrez la slot 23" />
+                </div>
+                <div class="colonneGain colonne" data-line="23">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="23"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="24">
+                    <input type="text" id="participant24" placeholder="Entrez le pseudo 24" />
+                </div>
+                <div class="colonneSlot colonne" data-line="24">
+                    <input type="text" placeholder="Entrez la slot 24" />
+                </div>
+                <div class="colonneGain colonne" data-line="24">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="24"></div>
+            </div>
+
+            <div class="ligne">
+                <div class="colonnePseudo colonne" data-line="25">
+                    <input type="text" id="participant25" placeholder="Entrez le pseudo 25" />
+                </div>
+                <div class="colonneSlot colonne" data-line="25">
+                    <input type="text" placeholder="Entrez la slot 25" />
+                </div>
+                <div class="colonneGain colonne" data-line="25">
+                    <input type="number" placeholder="Entrez le gain" />
+                </div>
+                <div class="colonneMulti colonne" data-line="25"></div>
+            </div>
+        </div>
+        <div class="boutons">
+            <button class="btn" id="boutonTri">TOP 8</a>
+            <button class="btn" id="boutonRemplir">REMPLIR ARBRE</a>
+        </div>
+    </section>
+
+    <section class="cut-section flux" id="section44">
+        <h2>PHASES FINALES</h2>
+    </section>
+
+    <section class="flux arbre-section ">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div class="arbre-gauche">
+            <div class="quart1">
+                <div class="participant1">
+                    <div id="gagnant1" class="colonneArbreText"><span id="pseudoGagnant1"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre" id="gain1"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+
+                <div class="participant2">
+                    <div id="gagnant2" class="colonneArbreText"><span id="pseudoGagnant2"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre" id="gain2"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+            </div>
+
+            <div class="demi12">
+                <div class="demi1">
+                    <div id="gagnant9" class="colonneArbreText"><span id="pseudoGagnant9"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre" id="gain9"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+
+                <div class="demi2">
+                    <div id="gagnant10" class="colonneArbreText"><span id="pseudoGagnant10"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre" id="gain10"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+            </div>
+
+            <div class="quart2">
+                <div class="participant3">
+                    <div id="gagnant3" class="colonneArbreText"><span id="pseudoGagnant3"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain3"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+
+                <div class="participant4">
+                    <div id="gagnant4" class="colonneArbreText"><span id="pseudoGagnant4"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain4"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="finale">
+            <div class="finale1">
+                <div id="gagnant13" class="colonneArbreText"><span id="pseudoGagnant13"></span></div>
+                <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                <div class="colonneArbreNumber gainArbre"id="gain13"><input type="number" class="gain" placeholder="Gains" /></div>
+                <div class="colonneArbreNumber multiArbre"></div>
+            </div>
+
+            <div class="finale2">
+                <div id="gagnant14" class="colonneArbreText"><span id="pseudoGagnant14"></span></div>
+                <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                <div class="colonneArbreNumber gainArbre"id="gain14"><input type="number" class="gain" placeholder="Gains" /></div>
+                <div class="colonneArbreNumber multiArbre"></div>
+            </div>
+        </div>
+
+        <div class="arbre-droite">
+            <div class="quart3">
+                <div class="participant1">
+                    <div id="gagnant5" class="colonneArbreText"><span id="pseudoGagnant5"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain5"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+
+                <div class="participant2">
+                    <div id="gagnant6" class="colonneArbreText"><span id="pseudoGagnant6"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain6"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+            </div>
+
+            <div class="demi34">
+                <div class="demi3">
+                    <div id="gagnant11" class="colonneArbreText"><span id="pseudoGagnant11"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain11"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+
+                <div class="demi4">
+                    <div id="gagnant12" class="colonneArbreText"><span id="pseudoGagnant12"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain12"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+            </div>
+
+            <div class="quart4">
+                <div class="participant3">
+                    <div id="gagnant7" class="colonneArbreText"><span id="pseudoGagnant7"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain7"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+
+                <div class="participant4">
+                    <div id="gagnant8" class="colonneArbreText"><span id="pseudoGagnant8"></span></div>
+                    <div class="colonneArbreText"><input type="text" placeholder="Entrez une slot" /></div>
+                    <div class="colonneArbreNumber gainArbre"id="gain8"><input type="number" class="gain" placeholder="Gains" /></div>
+                    <div class="colonneArbreNumber multiArbre"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script defer src="../script/tournoi.js"></script>
+</body>
+
+</html>
