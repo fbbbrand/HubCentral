@@ -130,14 +130,14 @@ input::placeholder {
 
 .colonneSlot,
 .colonne-headerSlot {
-    width: 30%;
+    width: 35%;
     text-align: start;
 
 }
 
 .colonneGain,
 .colonne-headerGain {
-    width: 20%;
+    width: 15%;
 }
 
 .colonne-headerGain {
@@ -146,7 +146,7 @@ input::placeholder {
 
 .colonneMulti,
 .colonne-headerMutli {
-    width: 20%;
+    width: 15%;
     text-align: start;
 
 }
