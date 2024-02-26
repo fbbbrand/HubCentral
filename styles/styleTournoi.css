@@ -43,11 +43,13 @@ img {
 }
 
 h1 {
+    text-align: center;
     margin-top: 100px;
     font-family: "Sixtyfour", sans-serif;
     font-size: 32px;
     transform: rotate(-12deg);
     margin-right: 0.5em;
+    margin-left: -2em;
 }
 
 .top25 {
