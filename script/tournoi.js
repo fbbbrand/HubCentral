@@ -19,6 +19,13 @@ function trierParMultiplicateur() {
         return valeurB - valeurA; // Tri décroissant
     });
 
+    // Mettre à jour les ID des participants après le tri
+    lignes.forEach(function(ligne, index) {
+        ligne.querySelectorAll('.colonnePseudo input').forEach(function(input) {
+            input.id = 'participant' + (index + 1);
+        });
+    });
+
     // Ajouter la première ligne après le tri
     tableau.appendChild(lignesAExclure);
 
@@ -31,7 +38,14 @@ function trierParMultiplicateur() {
     lignes.forEach(function(ligne) {
         tableau.appendChild(ligne);
     });
-}
+
+    // Mettre à jour les div avec l'id "pseudoGagnant" avec les 8 premières lignes triées
+    for (var i = 0; i < 8; i++) {
+        var nomParticipant = document.getElementById("participant" + (i + 1)).value;
+        document.getElementById("pseudoGagnant" + (i + 1)).textContent = nomParticipant;
+    };
+};
+
 
 
 // CALCUL MULTI TABLEAU 
@@ -103,23 +117,9 @@ gainBoxes2.forEach(function (gainArbre, index) {
 
 
 document.getElementById('boutonRemplir').addEventListener('click', function() {
-    mettreAJourNoms();
+    scrollToSection('section44');
 });
-function mettreAJourNoms() {
-    // Boucle pour les 8 premières box participant-box
-    for (let i = 1; i <= 8; i++) {
-        // Construire l'ID de la box participant
-        let participantId = "participant" + i;
 
-        // Récupérer la valeur de l'input box participant
-        let nomParticipant = document.getElementById(participantId).value;
-
-        // Mettre à jour le pseudo correspondant dans les tableaux
-        document.getElementById("pseudoGagnant" + i).textContent = nomParticipant;
-    }
-        // Faire défiler vers la section 2 après la mise à jour des noms
-        scrollToSection('section44');
-}
 
 function scrollToSection(sectionId) {
     var section = document.getElementById(sectionId);
