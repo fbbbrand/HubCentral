@@ -42,11 +42,12 @@ img {
     margin-bottom: 125px;
 }
 
-.texte {
+h1 {
     margin-top: 100px;
     font-family: "Sixtyfour", sans-serif;
-    font-size: 18px;
-    transform: rotate(-10deg);
+    font-size: 32px;
+    transform: rotate(-12deg);
+    margin-right: 0.5em;
 }
 
 .top25 {
