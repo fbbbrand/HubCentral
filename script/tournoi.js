@@ -116,6 +116,37 @@ gainBoxes2.forEach(function (gainArbre, index) {
 });
 
 
+// Récupérez toutes les boîtes de gain et de résultat
+var gainBoxes3 = document.querySelectorAll(".gainArbre2 input");
+var resultBoxes3 = document.querySelectorAll(".multiArbre2");
+
+// Ajoutez un écouteur d'événements pour chaque boîte de gain
+gainBoxes3.forEach(function (gainArbre2, index) {
+    gainArbre2.addEventListener("input", function () {
+        // Récupérez la valeur de la boîte de gain correspondante
+        var gainValue3 = parseFloat(gainArbre2.value);
+
+        // Vérifiez si la valeur est un nombre valide
+        if (!isNaN(gainValue3)) {
+            // Effectuez le calcul en divisant la valeur par 0.2
+            var result3 = gainValue3 / 0.4;
+
+            // Mettez à jour la cellule de résultat avec le résultat limité à 2 décimales
+            resultBoxes3[index].textContent = result3.toFixed(2);
+            resultBoxes3[index].style.textAlign = "center";
+
+            // Appliquez les styles en fonction de la valeur
+            if (result3 < 25) {
+                resultBoxes3[index].style.color = "#db2b5a";
+            } else if (result3 >= 25 && result3 <= 75) {
+                resultBoxes3[index].style.color = "#e38800";
+            } else {
+                resultBoxes3[index].style.color = "#00e31e";
+            }
+        } 
+    });
+});
+
 document.getElementById('boutonRemplir').addEventListener('click', function() {
     scrollToSection('section44');
 });
