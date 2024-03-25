@@ -115,7 +115,6 @@ gainBoxes2.forEach(function (gainArbre, index) {
     });
 });
 
-
 // Récupérez toutes les boîtes de gain et de résultat
 var gainBoxes3 = document.querySelectorAll(".gainArbre2 input");
 var resultBoxes3 = document.querySelectorAll(".multiArbre2");
@@ -146,6 +145,8 @@ gainBoxes3.forEach(function (gainArbre2, index) {
         } 
     });
 });
+
+
 
 document.getElementById('boutonRemplir').addEventListener('click', function() {
     scrollToSection('section44');
@@ -275,3 +276,96 @@ function Vainqueur() {
     pseudoGagnantElement.style.margin = '0 auto';
     
 }
+
+
+
+// Fonction pour enregistrer les données localement
+function enregistrerDonneesLocalement() {
+    // Enregistrer les données des colonnes de gain et de résultat
+    var gainBoxes = document.querySelectorAll(".colonneGain input");
+    gainBoxes.forEach(function (colonneGain, index) {
+        localStorage.setItem("gain" + (index + 1), colonneGain.value);
+    });
+
+    var resultBoxes = document.querySelectorAll(".colonneMulti");
+    resultBoxes.forEach(function (colonneMulti, index) {
+        localStorage.setItem("result" + (index + 1), colonneMulti.textContent);
+    });
+
+    // Enregistrer les données des colonnes de pseudos
+    var pseudoInputs = document.querySelectorAll('.colonnePseudo input');
+    pseudoInputs.forEach(function (input, index) {
+        localStorage.setItem("pseudo" + (index + 1), input.value);
+    });
+
+    var slotInputs = document.querySelectorAll('.colonneSlot input');
+    slotInputs.forEach(function (colonneSlot, index) {
+        localStorage.setItem("slot" + (index + 1), colonneSlot.textContent);
+    })
+}
+
+// Fonction pour charger les données enregistrées localement lors du chargement de la page
+function chargerDonneesLocalement() {
+    // Charger les données des colonnes de gain et de résultat
+    var gainBoxes = document.querySelectorAll(".colonneGain input");
+    gainBoxes.forEach(function (colonneGain, index) {
+        var gainValue = localStorage.getItem("gain" + (index + 1));
+        if (gainValue !== null) {
+            colonneGain.value = gainValue;
+        }
+    });
+
+    var resultBoxes = document.querySelectorAll(".colonneMulti");
+    resultBoxes.forEach(function (colonneMulti, index) {
+        var resultValue = localStorage.getItem("result" + (index + 1));
+        if (resultValue !== null) {
+            colonneMulti.textContent = resultValue;
+        }
+    });
+
+    // Charger les données des colonnes de pseudos
+    var pseudoInputs = document.querySelectorAll('.colonnePseudo input');
+    pseudoInputs.forEach(function (input, index) {
+        var pseudoValue = localStorage.getItem("pseudo" + (index + 1));
+        if (pseudoValue !== null) {
+            input.value = pseudoValue;
+        }
+    });
+
+    var slotInputs = document.querySelectorAll('.colonneSlot input');
+    slotInputs.forEach(function (colonneSlot, index) {
+        var slotValue = localStorage.getItem("slot" + (index + 1));
+        if (slotValue !== null) {
+            colonneSlot.textContent = slotValue;
+        }
+    })
+}
+
+// Appeler la fonction pour charger les données lors du chargement de la page
+chargerDonneesLocalement();
+
+// Écouter les événements de changement pour enregistrer les données localement
+document.querySelectorAll('.colonneGain input, .colonnePseudo input, .colonneSlot input').forEach(function (input) {
+    input.addEventListener('input', enregistrerDonneesLocalement);
+});
+
+// Fonction pour effacer le contenu de tous les inputs
+function effacerContenuInputs() {
+    // Récupérer tous les inputs de la page
+    var inputs = document.querySelectorAll('input');
+
+    // Parcourir tous les inputs et réinitialiser leur valeur à une chaîne vide
+    inputs.forEach(function(input) {
+        input.value = '';
+    });
+
+    // Effacer également les données enregistrées localement
+    localStorage.clear();
+
+    // Recharger la page
+    location.reload();
+}
+
+// Écouter l'événement click sur le bouton pour effacer le contenu des inputs
+document.getElementById('boutonReset').addEventListener('click', effacerContenuInputs);
+
