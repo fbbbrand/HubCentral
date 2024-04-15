@@ -167,6 +167,10 @@ a {
     color: white;
 }
 
+#boutonReset {
+    background: radial-gradient(ellipse at bottom, #F31515 0%, #FA5050 100%);
+}
+
 .btn {
     margin-left: 30px;
     appearance: button;
