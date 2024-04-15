@@ -171,10 +171,12 @@ a {
     background: radial-gradient(ellipse at bottom, #F31515 0%, #FA5050 100%);
 }
 
+#boutonTri, #boutonRemplir {
+        background: radial-gradient(ellipse at bottom, #1e2936 0%, #222d66 100%);
+}
 .btn {
     margin-left: 30px;
     appearance: button;
-    background: radial-gradient(ellipse at bottom, #1e2936 0%, #222d66 100%);
     border: 1px solid #000;
     border-radius: 4px;
     box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px;
