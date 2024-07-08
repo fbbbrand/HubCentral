@@ -252,7 +252,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 33%;
+    width: 42%;
     height: 100%;
 }
 
@@ -285,7 +285,7 @@ h2 {
     justify-content: center;
     gap: 10px;
     height: 33%;
-    width: 33%;
+    width: 42%;
 }
 
 .finale1 {
