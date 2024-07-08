@@ -252,7 +252,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 42%;
+    width: 50%;
     height: 100%;
 }
 
@@ -276,7 +276,7 @@ h2 {
     justify-content: center;
     gap: 10px;
     height: 33%;
-    width: 100%;
+    width: 110%;
 }
 
 .finale {
@@ -285,7 +285,7 @@ h2 {
     justify-content: center;
     gap: 10px;
     height: 33%;
-    width: 42%;
+    width: 50%;
 }
 
 .finale1 {
@@ -294,7 +294,8 @@ h2 {
 
 .finale1,
 .finale2 {
-    width: 100%;
+    margin-left: -50px;
+    width: 120%;
 }
 
 .participant1,
