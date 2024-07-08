@@ -216,24 +216,24 @@ document.getElementById("gain8").addEventListener("input", determinerGagnant3);
 function determinerGagnant4() {
     // Extraction des valeurs des éléments multi
     var multi9 = parseFloat(document.getElementById("gain9").querySelector(".gain").value);
-    var multi10 = parseFloat(document.getElementById("gain10").querySelector(".gain").value);
+    var multi11 = parseFloat(document.getElementById("gain11").querySelector(".gain").value);
 
     // Comparaison des valeurs et attribution du gagnant à pseudoGagnant9
     var pseudoGagnant = document.getElementById("pseudoGagnant13");
-    pseudoGagnant.textContent = multi9 > multi10 ? document.getElementById("pseudoGagnant9").textContent : document.getElementById("pseudoGagnant10").textContent;
+    pseudoGagnant.textContent = multi9 > multi11 ? document.getElementById("pseudoGagnant9").textContent : document.getElementById("pseudoGagnant11").textContent;
 }
 
 // Exemple d'appel de la fonction lorsque quelque chose déclenche le calcul (peut-être un bouton)
-document.getElementById("gain10").addEventListener("input", determinerGagnant4);
+document.getElementById("gain11").addEventListener("input", determinerGagnant4);
 
 function determinerGagnant5() {
     // Extraction des valeurs des éléments multi
-    var multi11 = parseFloat(document.getElementById("gain11").querySelector(".gain").value);
+    var multi10 = parseFloat(document.getElementById("gain10").querySelector(".gain").value);
     var multi12 = parseFloat(document.getElementById("gain12").querySelector(".gain").value);
 
     // Comparaison des valeurs et attribution du gagnant à pseudoGagnant9
     var pseudoGagnant = document.getElementById("pseudoGagnant14");
-    pseudoGagnant.textContent = multi11 > multi12 ? document.getElementById("pseudoGagnant11").textContent : document.getElementById("pseudoGagnant12").textContent;
+    pseudoGagnant.textContent = multi10 > multi12 ? document.getElementById("pseudoGagnant10").textContent : document.getElementById("pseudoGagnant12").textContent;
 }
 
 // Exemple d'appel de la fonction lorsque quelque chose déclenche le calcul (peut-être un bouton)
@@ -243,7 +243,7 @@ document.getElementById("gain12").addEventListener("input", determinerGagnant5);
 
 document.getElementById("gain14").addEventListener("input", function() {
     // Appeler determinerGagnant5 après 10 secondes
-    setTimeout(Vainqueur, 4000);
+    setTimeout(Vainqueur, 3000);
 });
 
 function Vainqueur() {
@@ -368,4 +368,3 @@ function effacerContenuInputs() {
 
 // Écouter l'événement click sur le bouton pour effacer le contenu des inputs
 document.getElementById('boutonReset').addEventListener('click', effacerContenuInputs);
-
