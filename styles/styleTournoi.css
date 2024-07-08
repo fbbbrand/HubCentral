@@ -47,7 +47,7 @@ h1 {
     text-align: center;
     margin-top: 100px;
     font-family: "Sixtyfour", sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     transform: rotate(-12deg);
     margin-right: 0.5em;
     margin-left: -2em;
@@ -224,6 +224,7 @@ a {
     border-top: 4mm ridge rgba(18, 30, 66, .625);
     border-bottom: 4mm ridge rgba(18, 30, 66, .625);
     margin-bottom: 50px;
+
 }
 
 h2 {
@@ -235,15 +236,12 @@ h2 {
 .arbre-section {
     display: flex;
     align-items: center;
-    height: 70dvh;
-    width: 80%;
+    height: 60dvh;
+    width: 100%;
     background: radial-gradient(ellipse at bottom, #1e2329 0%, #3d4880 100%);
-    margin-bottom: 75px;
     font-family: "Roboto", sans-serif;
     font-size: 12px;
     font-weight: 700;
-    padding: 2px 35px;
-    border-radius: 30px;
     margin-bottom: 200px;
 }
 
@@ -257,12 +255,13 @@ h2 {
 }
 
 .arbre-gauche {
-    margin-left: 5px;
+    margin-left: 60px;
     align-items: start;
 }
 
 .arbre-droite {
     align-items: end;
+    margin-right: 60px;
 }
 
 .quart1,
@@ -370,6 +369,7 @@ input::placeholder {
     color: #999;
     font-style: italic;
     opacity: 75%;
+    font-size: 12px;
 }
 
 
