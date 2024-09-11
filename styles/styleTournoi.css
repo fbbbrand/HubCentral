@@ -35,6 +35,11 @@ img {
 
 /* STYLES CSS POUR LA MAIN PAGE */
 
+.highlight {
+    background-color: yellow !important; /* Utilisez !important pour forcer l'application */
+}
+
+
 .main-content {
     display: flex;
     justify-content: center;
